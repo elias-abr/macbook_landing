@@ -2,22 +2,21 @@ import useMacbookStore from "../store";
 import clsx from "clsx";
 import { Canvas } from "@react-three/fiber";
 
-import StudioLights from "./StudioLights";
+import StudioLights from "./three/StudioLights.jsx";
 import ModelSwitcher from "./three/ModelSwitcher.jsx";
 import { useMediaQuery } from "react-responsive";
 
 const ProductViewer = () => {
   const { color, scale, setColor, setScale } = useMacbookStore();
 
-  const isMobile = useMediaQuery({ query: "(max-width: 1024px" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+
   return (
     <section id="product-viewer">
       <h2>Take a closer look.</h2>
 
       <div className="controls">
-        <p className="info">
-          Macbook Pro | Available in 14" & 16" in Space Gray and Dark Colors
-        </p>
+        {/*<p className="info">Macbook Pro | Available in 14" & 16" in Space Gray & Dark colors</p>*/}
 
         <div className="flex-center gap-5 mt-5">
           <div className="color-control">
