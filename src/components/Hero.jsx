@@ -16,7 +16,13 @@ const Hero = () => {
 
       <video ref={videoRef} src="/videos/hero.mp4" autoPlay muted playsInline />
 
-      <button>Buy</button>
+      <a
+        href="https://www.apple.com/macbook-pro/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button>Buy</button>
+      </a>
 
       <p>From $1599 or $133/mo for 12 months</p>
     </section>

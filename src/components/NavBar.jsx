@@ -4,7 +4,15 @@ const NavBar = () => {
   return (
     <header>
       <nav>
-        <img src="/logo.svg" alt="Apple logo" />
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <img src="/logo.svg" alt="Apple logo" />
+        </a>
 
         <ul>
           {navLinks.map(({ label, href }) => (
